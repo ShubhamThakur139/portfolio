@@ -166,10 +166,32 @@ body {
     animation: tooltips-vert 300ms ease-out forwards;
 }
 
+.footer {
+    position: relative;
+    width: 100%;
+    background: #1A1C20;
+    padding: 2px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer p {
+    color: rgb(252, 241, 241);
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 /* utitlity classes  */
 .mar_y {
     margin: 70px 0;
+}
+
+/* utitlity classes  */
+.mar_y1 {
+    margin: 100px 0;
 }
 
 .c_btn {
@@ -205,4 +227,8 @@ body {
 
 .text-right {
     text-align: right;
+}
+
+.obj-fit {
+    object-fit: contain;
 }

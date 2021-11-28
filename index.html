@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- navbar  -->
@@ -37,7 +43,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -54,6 +60,12 @@
         </ul>
         <div class="my-2 my-lg-0">
           <a
+            href="https://drive.google.com/file/d/1E3enNXvPav9RfgmrJ_7LbXMZqPK4OCga/view?usp=sharing"
+            target="_blank"
+            class="c_btn btn_primary rm_link mr-2"
+            >View CV</a
+          >
+          <a
             href="https://www.linkedin.com/in/shubham-thakur-00/"
             class="c_btn btn_primary btn1-w my-sm-0 rm_link"
             target="_blank"
@@ -64,64 +76,74 @@
       </div>
     </nav>
 
-    <!-- home -->
-    <div class="home mar_y">
-      <div class="container-fluid m-auto">
-        <div class="row">
-          <div class="col-md-6 col-12 my-auto">
-            <h1 class="heading">👋🏻 Hey...</h1>
-            <h1 class="heading">I'm Shubham Thakur</h1>
-            <p class="h_para">
-              A passionate Full Stack Software Developer 🚀 having an experience
-              of building Web applications with JavaScript / Spring / MySql and
-              some other cool libraries and frameworks.
-            </p>
-            <div>
-              <a
-                href="https://drive.google.com/file/d/1E3enNXvPav9RfgmrJ_7LbXMZqPK4OCga/view?usp=sharing"
-                target="_blank"
-                class="c_btn btn_primary rm_link"
-                style="margin-top: 100px"
-                >View CV</a
-              >
+    <div class="container-fluid mar_y" id="home">
+      <div class="row">
+        <div class="col-md-11 col-12 m-auto">
+          <div class="container-fluid m-auto">
+            <div class="row">
+              <div class="col-md-6 col-12 my-auto">
+                <h1 class="heading">👋🏻 Hey...</h1>
+                <h1 class="heading">I'm Shubham Thakur</h1>
+                <p class="h_para">
+                  A passionate Full Stack Software Developer 🚀 having an
+                  experience of building Web applications with JavaScript /
+                  Spring / MySql and some other cool libraries and frameworks.
+                </p>
+                <div>
+                  <a
+                    href="https://drive.google.com/file/d/1E3enNXvPav9RfgmrJ_7LbXMZqPK4OCga/view?usp=sharing"
+                    target="_blank"
+                    class="c_btn btn_primary rm_link"
+                    style="margin-top: 100px"
+                    >View CV</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <img src="./images/web_development_zhfivq.svg" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-12">
-            <img src="./images/web_development_zhfivq.svg" alt="" />
           </div>
         </div>
       </div>
     </div>
 
-    <!-- About section  -->
-    <div class="about mar_y" id="about">
-      <div class="container-fluid m-auto">
-        <h1 class="text-center heading1">About Myself 🤗</h1>
-        <div class="row">
-          <div class="col-md-7 col-12 my-auto">
-            <p class="h_para">
-              When I was in Class 10, I heard about software engineering since
-              then I always wanted to be a software engineer. <br />
-              However, due to circumstantial reasons, I couldn't pursue B.Tech
-              so I had to opt for B.C.A. I was reluctant initially and therefore
-              didn't study much of what I was supposed to. However, in my final
-              year, I discovered my love for coding and the journey went
-              thereon. <br />
-              But I realized I lacked the potential skills for coding that were
-              required to procure a job and that's when I came across Masai
-              School. Masai school has been a game-changer for me. <br />
-              I learned technical skills as well as interpersonal skills which
-              helped me grow and achieve my goals. <br />
-              Apart from programming, I enjoy playing chess and cricket.
-            </p>
-          </div>
-          <div class="col-md-5 col-12 text-right">
-            <img
-              src="./images/IMG-20210111-WA0011.jpg"
-              class="img-fluid c_img z-depth-2"
-              alt="100x100"
-              data-holder-rendered="true"
-            />
+    <!-- home -->
+    <!-- <div class="home mar_y"></div> -->
+
+    <div class="container-fluid mar_y" id="about">
+      <div class="row">
+        <div class="col-md-11 col-12 m-auto">
+          <h1 class="text-center heading1 mb-5">About Myself 🤗</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7 col-12 my-auto">
+                <p class="h_para">
+                  When I was in Class 10, I heard about software engineering
+                  since then I always wanted to be a software engineer. <br />
+                  However, due to circumstantial reasons, I couldn't pursue
+                  B.Tech so I had to opt for B.C.A. I was reluctant initially
+                  and therefore didn't study much of what I was supposed to.
+                  However, in my final year, I discovered my love for coding and
+                  the journey went thereon. <br />
+                  But I realized I lacked the potential skills for coding that
+                  were required to procure a job and that's when I came across
+                  Masai School. Masai school has been a game-changer for me.
+                  <br />
+                  I learned technical skills as well as interpersonal skills
+                  which helped me grow and achieve my goals. <br />
+                  Apart from programming, I enjoy playing chess and cricket.
+                </p>
+              </div>
+              <div class="col-md-5 col-12 text-right">
+                <img
+                  src="./images/IMG-20210111-WA0011.jpg"
+                  class="img-fluid c_img z-depth-2"
+                  alt="100x100"
+                  data-holder-rendered="true"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -129,52 +151,147 @@
 
     <!-- Skills  -->
     <div class="skills" id="skills">
-      <h1 class="heading1">My Skills & Tech Stack 🛠️</h1>
-      <div class="container">
-        <div class="row m-auto">
-          <div class="col-md-4 col-6 text-center mt-4">
-            <span tooltip="HTML5" flow="down"
-              ><img src="./images/html5svg.4e771a85.svg" alt="" width="250"
-            /></span>
-          </div>
-          <div class="col-md-4 col-6 text-center mt-4">
-            <span tooltip="CSS3" flow="down"
-              ><img src="./images/css3svg.7d0accfc.svg" alt="" width="250"
-            /></span>
-          </div>
-          <div class="col-md-4 col-6 text-center mt-4">
-            <span tooltip="Javascript" flow="down"
-              ><img src="./images/jssvg.db8773c5.svg" alt="" width="250"
-            /></span>
-          </div>
-          <div class="col-md-4 col-6 text-center mt-4 my-auto">
-            <span tooltip="Bootstrap" flow="down"
-              ><img src="./images/bootstrap-4.svg" alt="" width="180"
-            /></span>
-          </div>
-          <div class="col-md-4 col-6 text-center mt-4">
-            <span tooltip="Git/Github" flow="down"
-              ><img src="./images/githubsvg.597ca118.svg" alt="" width="250"
-            /></span>
-          </div>
-          <div class="col-md-4 col-6 text-center mt-4">
-            <span tooltip="Java" flow="down">
-              <img src="./images/java-icon.svg" alt="" width="250" height="205"
-            /></span>
-          </div>
-          <div class="col-md-4 col-6 text-center mt-4">
-            <span tooltip="Spring" flow="down">
-              <img src="./images/spring.png" alt="" width="210" height="180"
-            /></span>
-          </div>
-          <div class="col-md-4 col-6 text-center my-auto mt-4">
-            <span tooltip="MySQL" flow="down">
-              <img src="./images/MySQL.png" alt="" width="210"
-            /></span>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-12 m-auto">
+            <h1 class="heading1">My Skills & Tech Stack 🛠️</h1>
+            <div class="container-fluid">
+              <div class="row m-auto">
+                <div class="col-md-4 col-6 text-center mt-4">
+                  <span tooltip="HTML5" flow="down"
+                    ><img
+                      src="./images/html5svg.4e771a85.svg"
+                      alt=""
+                      width="220"
+                  /></span>
+                </div>
+                <div class="col-md-4 col-6 text-center mt-4">
+                  <span tooltip="CSS3" flow="down"
+                    ><img
+                      src="./images/css3svg.7d0accfc.svg"
+                      alt=""
+                      width="220"
+                  /></span>
+                </div>
+                <div class="col-md-4 col-6 text-center mt-4">
+                  <span tooltip="Javascript" flow="down"
+                    ><img src="./images/jssvg.db8773c5.svg" alt="" width="220"
+                  /></span>
+                </div>
+                <div class="col-md-4 col-6 text-center mt-4 my-auto">
+                  <span tooltip="Bootstrap" flow="down"
+                    ><img src="./images/bootstrap-4.svg" alt="" width="180"
+                  /></span>
+                </div>
+                <div class="col-md-4 col-6 text-center mt-4">
+                  <span tooltip="Git/Github" flow="down"
+                    ><img
+                      src="./images/githubsvg.597ca118.svg"
+                      alt=""
+                      width="220"
+                  /></span>
+                </div>
+                <div class="col-md-4 col-6 text-center mt-4">
+                  <span tooltip="Java" flow="down">
+                    <img
+                      src="./images/java-icon.svg"
+                      alt=""
+                      width="220"
+                      height="205"
+                  /></span>
+                </div>
+                <div class="col-md-4 col-6 text-center mt-4">
+                  <span tooltip="Spring" flow="down">
+                    <img
+                      src="./images/spring.png"
+                      class="obj-fit"
+                      alt=""
+                      width="210"
+                      height="180"
+                  /></span>
+                </div>
+                <div class="col-md-4 col-6 text-center my-auto mt-4">
+                  <span tooltip="MySQL" flow="down">
+                    <img
+                      src="./images/MySQL.png"
+                      alt=""
+                      class="obj-fit"
+                      width="210"
+                  /></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Contact -->
+    <div class="contact mar_y1" id="contact">
+      <h1 class="heading1">Contact Me <span> 📧</span></h1>
+      <p class="h_para text-center my-3">
+        If you want to get in touch, reach out to me via Email or Social Media
+        👇:
+      </p>
+
+      <hr style="width: 400px" class="m-auto my-3" />
+      <div class="text-center my-4">
+        <a href="mailto:shubhamthakur2920@gmail.com" target="_blank"
+          >shubhamthakur2920@gmail.com</a
+        >
+      </div>
+
+      <p class="h_para text-center">🏡 Punjab, India</p>
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-md-2 col-4 text-center mt-4">
+            <a
+              href="https://www.linkedin.com/in/shubham-thakur-00/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-3x" style="color: #0b65c2"></i
+            ></a>
+          </div>
+          <div class="col-md-2 col-4 text-center mt-4">
+            <a href="https://github.com/ShubhamThakur139" target="_blank"
+              ><i class="fab fa-github fa-3x" style="color: #000"></i
+            ></a>
+          </div>
+          <div class="col-md-2 col-4 text-center mt-4">
+            <a href="mailto:shubhamthakur2920@gmail.com" target="_blank">
+              <img src="./images/gmail.png" alt="" width="45" height="45" />
+            </a>
+          </div>
+          <div class="col-md-2 col-4 text-center mt-4">
+            <a href="https://twitter.com/Shubham94527986" target="_blank">
+              <i class="fab fa-twitter fa-3x" style="color: #1a8cd8"></i>
+            </a>
+          </div>
+          <div class="col-md-2 col-4 text-center mt-4">
+            <a href="https://leetcode.com/Shubhamthakur051/" target="_blank">
+              <img
+                src="./images/leetcode.svg"
+                alt=""
+                style="color: #f29915"
+                width="45"
+                height="45"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-4 text-center mt-4">
+            <a
+              href="https://www.hackerrank.com/shubhamthakur291"
+              target="_blank"
+            >
+              <i class="fab fa-hackerrank fa-3x" style="color: #2dc865"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy;2021 Shubham Thakur | All Rights Reserved</p>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
