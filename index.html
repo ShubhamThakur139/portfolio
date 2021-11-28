@@ -7,6 +7,24 @@
     <title>Shubham Thakur</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -42,8 +60,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -76,6 +94,7 @@
       </div>
     </nav>
 
+    <!-- home   -->
     <div class="container-fluid mar_y" id="home">
       <div class="row">
         <div class="col-md-11 col-12 m-auto">
@@ -108,9 +127,7 @@
       </div>
     </div>
 
-    <!-- home -->
-    <!-- <div class="home mar_y"></div> -->
-
+    <!-- about -->
     <div class="container-fluid mar_y" id="about">
       <div class="row">
         <div class="col-md-11 col-12 m-auto">
@@ -149,6 +166,45 @@
       </div>
     </div>
 
+    <!-- Projects  -->
+    <div class="container-fluid mar_y" id="projects">
+      <div class="row">
+        <div class="col-md-10 col-12 m-auto">
+          <h1 class="text-center heading1 mb-5">Featured Projects 🌐</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 col-12 m-auto main_div">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-7 col-12 left_div">
+                      <img src="./images/landingPage.jpg" alt="" />
+                    </div>
+                    <div class="col-md-5 col-12 right_div text-center mt-4">
+                      <h1 style="color: white">Instahyre Clone</h1>
+                      <div class="my-4">
+                        <a
+                          href="https://instahyre-clone.netlify.app/"
+                          target="_blank"
+                          class="c_btn btn_secondary btn1-w my-sm-0 rm_link"
+                          >See this Live</a
+                        >
+                        <a
+                          href="https://github.com/ShubhamThakur139/InstahyreClone"
+                          class="c_btn btn_secondary btn1-w my-sm-0 rm_link"
+                          target="_blank"
+                          >View Code</a
+                        >
+                      </div>
+                      <h3 class="mt-3">TechStack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Skills  -->
     <div class="skills" id="skills">
       <div class="container-fluid">
@@ -235,14 +291,18 @@
       </p>
 
       <hr style="width: 400px" class="m-auto my-3" />
+      <p class="h_para text-center">+91 6283830091</p>
       <div class="text-center my-4">
-        <a href="mailto:shubhamthakur2920@gmail.com" target="_blank"
+        <a
+          href="mailto:shubhamthakur2920@gmail.com"
+          target="_blank"
+          class="rm_link"
           >shubhamthakur2920@gmail.com</a
         >
       </div>
 
       <p class="h_para text-center">🏡 Punjab, India</p>
-      <div class="container my-4">
+      <div class="container my-4 logos">
         <div class="row">
           <div class="col-md-2 col-4 text-center mt-4">
             <a
@@ -289,6 +349,7 @@
       </div>
     </div>
 
+    <!-- footer  -->
     <footer class="footer">
       <p>&copy;2021 Shubham Thakur | All Rights Reserved</p>
     </footer>
@@ -308,5 +369,14 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".navbar-nav").on("click", "a", function () {
+          $(".navbar-nav a.active").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
   </body>
 </html>
