@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 10px 70px !important;
+    background-color: rgb(252, 241, 241);
+}
+
+.navbar-brand {
+    font-size: 25px !important;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.856) !important;
+}
+
+nav a {
+    font-size: 21px !important;
+    font-weight: 600;
+}
+
+.home {
+    padding: 0 70px !important;
+    margin: auto;
+    background-color: rgb(252, 241, 241);
+}
+
+/* .home .row > div {
+    border: 1px solid black;
+} */
