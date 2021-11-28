@@ -2,11 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(252, 241, 241) !important;
 }
 
 .navbar {
     padding: 10px 70px !important;
     background-color: rgb(252, 241, 241);
+    /* margin-bottom: 160px !important; */
 }
 
 .navbar-brand {
@@ -15,17 +23,186 @@
     color: rgba(0, 0, 0, 0.856) !important;
 }
 
-nav a {
+.nav-link {
     font-size: 21px !important;
     font-weight: 600;
 }
 
 .home {
+    margin-top: 150px !important;
+}
+
+.home,
+.about {
     padding: 0 70px !important;
     margin: auto;
     background-color: rgb(252, 241, 241);
 }
 
-/* .home .row > div {
-    border: 1px solid black;
-} */
+.heading {
+    text-align: right;
+    font-size: 52px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.h_para {
+    /* text-align: left; */
+    margin-top: 15px;
+    text-align: justify;
+    color: rgb(51, 51, 51) !important;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+}
+
+/* About part */
+.c_img {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.heading1 {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+/* START TOOLTIP STYLES */
+[tooltip] {
+    position: relative;
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+    text-transform: none;
+    font-size: .9em;
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+[tooltip]::before {
+    content: '';
+    border: 5px solid transparent;
+    z-index: 1001;
+}
+
+[tooltip]::after {
+    content: attr(tooltip);
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: .3ch;
+    box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    background: #333;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+    display: block;
+}
+
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+    display: none !important;
+}
+
+
+
+/* FLOW: DOWN */
+[tooltip][flow^="down"]::before {
+    top: calc(100% + 95px);
+    border-top-width: 0;
+    border-bottom-color: #333;
+}
+
+[tooltip][flow^="down"]::after {
+    top: calc(100% + 100px);
+}
+
+[tooltip][flow^="down"]::before,
+[tooltip][flow^="down"]::after {
+    left: 50%;
+    transform: translate(-50%, .5em);
+}
+
+
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+    to {
+        opacity: .9;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes tooltips-horz {
+    to {
+        opacity: .9;
+        transform: translate(0, -50%);
+    }
+}
+
+/* FX All The Things */
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="down"]:hover::before,
+[tooltip][flow^="down"]:hover::after {
+    animation: tooltips-vert 300ms ease-out forwards;
+}
+
+
+/* utitlity classes  */
+.mar_y {
+    margin: 70px 0;
+}
+
+.c_btn {
+    width: auto;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(46, 46, 46) !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.btn_primary {
+    border: 3px solid rgb(255, 213, 205);
+}
+
+
+.btn_primary:hover {
+    color: white !important;
+    background-color: rgb(255, 213, 205);
+}
+
+.rm_link {
+    text-decoration: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
