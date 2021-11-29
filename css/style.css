@@ -75,15 +75,28 @@ body {
     padding: 35px 20px;
 }
 
+.main_div:hover {
+    transition: all .3s ease-in-out;
+    box-shadow: rgb(0 0 0 / 51%) 10px 10px 10px;
+    background: rgb(255, 196, 204);
+}
+
+.m_top {
+    margin: 100px 0 !important;
+}
+
 .main_div>div {
     height: 100%;
 }
+
 
 .left_div img {
     width: 100%;
     height: 100%;
     border-radius: 18px;
     object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
 
 /* START TOOLTIP STYLES */
@@ -143,17 +156,34 @@ body {
 
 /* FLOW: DOWN */
 [tooltip][flow^="down"]::before {
-    top: calc(100% + 95px);
+    top: calc(100% + 75px);
     border-top-width: 0;
     border-bottom-color: #333;
 }
 
 [tooltip][flow^="down"]::after {
-    top: calc(100% + 100px);
+    top: calc(100% + 80px);
 }
 
 [tooltip][flow^="down"]::before,
 [tooltip][flow^="down"]::after {
+    left: 50%;
+    transform: translate(-50%, .5em);
+}
+
+/* FLOW: DOWN */
+[tooltip][flow1^="down"]::before {
+    top: calc(100%);
+    border-top-width: 0;
+    border-bottom-color: #333;
+}
+
+[tooltip][flow1^="down"]::after {
+    top: calc(100% + 6px);
+}
+
+[tooltip][flow1^="down"]::before,
+[tooltip][flow1^="down"]::after {
     left: 50%;
     transform: translate(-50%, .5em);
 }
@@ -207,7 +237,7 @@ body {
 }
 
 .mar_y1 {
-    margin-top: 35px;
+    padding-top: 55px !important;
 }
 
 .c_btn {
