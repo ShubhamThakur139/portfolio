@@ -1,0 +1,9 @@
+@media only screen and (max-width: 480px) {
+    .heading {
+        font-size: 30px;
+    }
+
+    .h_para {
+        font-size: 18px;
+    }
+}
