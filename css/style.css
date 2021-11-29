@@ -265,3 +265,8 @@ body {
 .logos {
     padding-bottom: 30px !important;
 }
+
+.link_style {
+    font-weight: 500;
+    font-size: 21px;
+}
