@@ -5,6 +5,7 @@
 
     .navbar {
         padding: 10px 17px !important;
+        padding-bottom: 38px !important;
     }
 
     #home,
@@ -27,8 +28,8 @@
     }
 
     .skills .img_boot {
-        margin-top: 17px;
-        width: 78px;
+        margin-top: 19px;
+        width: 74px;
     }
 
     .skills .img_java {
@@ -57,4 +58,27 @@
     .footer p {
         font-size: 12px;
     }
+
+
+    /* FLOW: DOWN */
+    [tooltip][flow^="down"]::before {
+        top: calc(100% + 35px);
+        border-top-width: 0;
+        border-bottom-color: #333;
+    }
+
+    [tooltip][flow^="down"]::after {
+        top: calc(100% + 40px);
+    }
+
+    [tooltip][flow^="down"]::before,
+    [tooltip][flow^="down"]::after {
+        left: 50%;
+        transform: translate(-50%, .5em);
+    }
+
+    .c_btn {
+        font-size: 16px;
+    }
+
 }
