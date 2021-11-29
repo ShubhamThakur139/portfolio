@@ -7,7 +7,54 @@
         padding: 10px 17px !important;
     }
 
+    #home,
+    #about,
+    #skills,
+    #projects {
+        padding-top: 50px !important;
+    }
+
+    #about .heading {
+        margin-bottom: 12px !important;
+    }
+
     .h_para {
         font-size: 18px;
+    }
+
+    .skills img {
+        width: 100px;
+    }
+
+    .skills .img_boot {
+        margin-top: 17px;
+        width: 78px;
+    }
+
+    .skills .img_java {
+        width: 88px;
+    }
+
+    .link_style {
+        margin-top: 10px !important;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .contact_p_resp {
+        padding: 3px !important;
+    }
+
+    .hr_res {
+        width: 250px !important;
+    }
+
+    .my_res {
+        margin: 5px 0 !important;
+    }
+
+    .footer p {
+        font-size: 12px;
     }
 }

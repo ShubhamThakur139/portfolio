@@ -14,7 +14,6 @@ body {
 .navbar {
     padding: 10px 70px !important;
     background-color: rgb(252, 241, 241);
-    /* margin-bottom: 160px !important; */
 }
 
 .navbar .nav-link.active {
@@ -27,7 +26,6 @@ body {
 .nav-link {
     font-size: 21px !important;
     font-weight: 500;
-    /* color: rgba(0, 0, 0, 0.719) !important; */
 }
 
 #home,
@@ -66,7 +64,6 @@ body {
 
 /* projects css  */
 .main_div {
-    /* height: 400px; */
     height: auto;
     background-color: rgb(255, 213, 205);
     border-radius: 20px;
@@ -94,7 +91,6 @@ body {
     border-radius: 18px;
     object-fit: contain;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
 
 /* START TOOLTIP STYLES */
