@@ -22,11 +22,12 @@ body {
     border-bottom: 3px solid rgba(0, 0, 0, 0.788);
 }
 
-/* .navbar .nav-link.active {
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.788) !important;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.788);
-} */
+.round_image {
+    width: 400px;
+    height: 470px !important;
+    border-radius: 260px;
+    object-fit: cover;
+}
 
 .nav-link {
     font-size: 21px !important;
@@ -57,13 +58,6 @@ body {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px !important;
-}
-
-/* About part */
-.c_img {
-    width: 400px;
-    height: auto;
-    border-radius: 50%;
 }
 
 
