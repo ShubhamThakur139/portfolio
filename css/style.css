@@ -16,12 +16,17 @@ body {
     background-color: rgb(252, 241, 241);
 }
 
-.navbar .nav-link.active {
+.active {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.788) !important;
     border-bottom: 3px solid rgba(0, 0, 0, 0.788);
 }
 
+/* .navbar .nav-link.active {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.788) !important;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.788);
+} */
 
 .nav-link {
     font-size: 21px !important;
