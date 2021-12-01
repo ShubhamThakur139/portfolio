@@ -80,4 +80,13 @@
         font-size: 16px;
     }
 
+    .social_links>div span {
+        margin-left: 0px;
+    }
+
+    .social_links>div a {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

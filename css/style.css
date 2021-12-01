@@ -149,13 +149,13 @@ body {
 
 /* FLOW: DOWN */
 [tooltip][flow^="down"]::before {
-    top: calc(100% + 75px);
+    top: calc(100% + 5px);
     border-top-width: 0;
     border-bottom-color: #333;
 }
 
 [tooltip][flow^="down"]::after {
-    top: calc(100% + 80px);
+    top: calc(100% + 10px);
 }
 
 [tooltip][flow^="down"]::before,
@@ -207,7 +207,6 @@ body {
 }
 
 .footer {
-    position: relative;
     width: 100%;
     background: #1A1C20;
     padding: 2px 50px;
@@ -294,8 +293,23 @@ body {
     font-size: 21px;
 }
 
-.icon_div>div {
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+.icon_div>div:not(:last-child) {
+    height: 200px !important;
+    display: grid;
+    margin-top: 50px !important;
+    place-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.social_links>div span {
+    margin-left: 10px;
+}
+
+.social_links>div a {
+    text-decoration: none;
+}
+
+.social_links>div a {
+    display: flex;
+    align-items: flex-end;
 }
