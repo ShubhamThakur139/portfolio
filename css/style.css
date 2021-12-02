@@ -268,6 +268,16 @@ body {
     border: 3px solid #333;
 }
 
+.btn1-w {
+    padding: 10px 20px !important;
+}
+
+.project_btn {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .rm_link {
     text-decoration: none !important;
 }
