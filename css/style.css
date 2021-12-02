@@ -242,34 +242,31 @@ body {
     font-weight: 500 !important;
     cursor: pointer;
     font-size: 18px;
-    padding: 5px 15px;
+    padding: 10px 20px;
 }
 
 .btn_primary {
     border: 3px solid rgb(255, 213, 205);
 }
 
-
 .btn_primary:hover {
+    transition: all .3s ease-in-out;
     color: white !important;
     background-color: rgb(255, 213, 205);
 }
 
-
 .btn_secondary {
     background-color: #333;
-    border-radius: 8px;
     color: rgb(255, 213, 205) !important;
 }
 
 .btn_secondary:hover {
+    transition: all .3s ease-in;
     color: #333 !important;
+    display: grid;
+    place-items: center;
     background-color: rgb(255, 213, 205);
     border: 3px solid #333;
-}
-
-.btn1-w {
-    padding: 10px 20px !important;
 }
 
 .project_btn {
