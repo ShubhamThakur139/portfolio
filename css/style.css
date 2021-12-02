@@ -307,6 +307,8 @@ body {
 
 .social_links>div span {
     margin-left: 10px;
+    color: #333 !important;
+    font-weight: 500;
 }
 
 .social_links>div a {
