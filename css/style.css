@@ -262,11 +262,8 @@ body {
 
 .btn_secondary:hover {
     transition: all .3s ease-in;
-    color: #333 !important;
-    display: grid;
-    place-items: center;
-    background-color: rgb(255, 213, 205);
-    border: 3px solid #333;
+    background-color: rgb(22, 22, 22);
+    color: #fff !important;
 }
 
 .project_btn {
