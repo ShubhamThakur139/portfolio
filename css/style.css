@@ -242,8 +242,11 @@ body {
     font-weight: 500 !important;
     cursor: pointer;
     font-size: 18px;
-    text-align: center;
     padding: 10px 20px;
+}
+
+.btn_div a {
+    border: 3px solid rgb(255, 213, 205);
 }
 
 .btn_primary {
@@ -329,4 +332,9 @@ body {
 
 .btn_mob {
     display: none;
+}
+
+.btn_div {
+    display: flex;
+    align-items: center;
 }

@@ -100,7 +100,7 @@
 
     .project_btn {
         margin-top: 15px !important;
-        flex-direction: column-reverse;
+        /* flex-direction: ; */
     }
 
     .project_btn>a {
