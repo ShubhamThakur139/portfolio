@@ -326,3 +326,7 @@ body {
     padding: 0 90px;
     justify-content: space-around;
 }
+
+.btn_mob {
+    display: none;
+}

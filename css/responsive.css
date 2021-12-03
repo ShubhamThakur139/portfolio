@@ -130,4 +130,13 @@
     .main_div {
         padding: 35px 0px !important;
     }
+
+    .mobile_btn a {
+        display: none;
+    }
+
+    .btn_mob {
+        display: inline-block;
+    }
+
 }
