@@ -319,3 +319,9 @@ body {
     display: flex;
     align-items: flex-end;
 }
+
+.social-icons {
+    display: flex;
+    padding: 0 90px;
+    justify-content: space-around;
+}

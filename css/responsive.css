@@ -94,4 +94,17 @@
         margin-top: 0 !important;
     }
 
+    .social-icons {
+        padding: 0 25px;
+    }
+
+    .project_btn {
+        margin-top: 15px !important;
+        flex-direction: column-reverse;
+    }
+
+    .project_btn>a {
+        margin-top: 15px;
+    }
+
 }
